@@ -15,7 +15,7 @@
       <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#07261D" flood-opacity="0.25"/>
     </filter>
     <clipPath id="officialMarkClip">
-      <circle cx="66" cy="64" r="61"/>
+      <circle cx="90" cy="90" r="84"/>
     </clipPath>
   </defs>
 
@@ -28,19 +28,19 @@
     <path d="M0 74c71 6 108 28 126 65 18 38 55 60 116 69"/>
   </g>
 
-  <g transform="translate(72 61)" filter="url(#shadow)">
-    <circle cx="66" cy="66" r="66" fill="#FFFFFF"/>
-    <image href="official-third-soil-survey-mark.png" x="0" y="0" width="132" height="132"
+  <g transform="translate(36 54)" filter="url(#shadow)">
+    <circle cx="90" cy="90" r="94" fill="#FFFDF7" stroke="#F5C56B" stroke-opacity="0.58" stroke-width="3"/>
+    <image href="official-third-soil-survey-mark.png" x="0" y="0" width="180" height="180"
       preserveAspectRatio="xMidYMid meet" clip-path="url(#officialMarkClip)"/>
   </g>
 
   <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" fill="#FFFFFF">
-    <text x="236" y="88" font-size="22" font-weight="600" letter-spacing="3" fill="#F5C56B">SOIL CHRONICLE WORKFLOW</text>
-    <text x="232" y="145" font-size="45" font-weight="700">三普市县级土壤志撰写与排版</text>
-    <text x="235" y="189" font-size="22" fill="#D5E7DF">从已有成果报告出发，让每项事实有出处、每章篇幅有边界、每页版式可验收</text>
+    <text x="264" y="88" font-size="22" font-weight="600" letter-spacing="3" fill="#F5C56B">SOIL CHRONICLE WORKFLOW</text>
+    <text x="260" y="145" font-size="43" font-weight="700">三普市县级土壤志撰写与排版</text>
+    <text x="263" y="189" font-size="21" fill="#D5E7DF">从已有成果报告出发，让每项事实有出处、每章篇幅有边界、每页版式可验收</text>
   </g>
 
-  <g transform="translate(236 220)" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="15" font-weight="600">
+  <g transform="translate(264 220)" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" font-size="15" font-weight="600">
     <g><rect width="142" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.28"/><circle cx="23" cy="20" r="6" fill="#F5C56B"/><text x="40" y="26" fill="#FFFFFF">证据驱动编纂</text></g>
     <g transform="translate(158 0)"><rect width="142" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.28"/><circle cx="23" cy="20" r="6" fill="#E7964C"/><text x="40" y="26" fill="#FFFFFF">模板篇幅契约</text></g>
     <g transform="translate(316 0)"><rect width="142" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.28"/><circle cx="23" cy="20" r="6" fill="#79B59D"/><text x="40" y="26" fill="#FFFFFF">验收导引排版</text></g>

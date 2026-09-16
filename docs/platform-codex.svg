@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="104" viewBox="0 0 900 104" role="img" aria-labelledby="title desc">
-  <title id="title">OpenAI Codex 安装方式</title><desc id="desc">平台一，推荐使用通用 Skill ZIP</desc>
-  <rect x="2" y="2" width="896" height="100" rx="18" fill="#EAF4EF" stroke="#B9D5C8" stroke-width="2"/><rect x="2" y="2" width="14" height="100" rx="7" fill="#155B45"/>
-  <circle cx="70" cy="52" r="28" fill="#155B45"/><text x="70" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">01</text>
-  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif"><text x="118" y="48" font-size="27" font-weight="700" fill="#173E31">OpenAI Codex</text><text x="118" y="75" font-size="17" fill="#5B7067">ZIP 一键安装或 Git 克隆 · 安装后用技能名显式调用</text><rect x="680" y="31" width="190" height="42" rx="21" fill="#155B45"/><text x="775" y="58" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">推荐 · 通用 Skill ZIP</text></g>
-</svg>

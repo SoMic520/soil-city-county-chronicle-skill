@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-skill.zip"><img alt="下载通用 Skill ZIP：适用于 Codex 与 Claude Code" src="docs/download-skill.svg" width="100%"></a>
+  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-skill.zip"><img alt="下载通用 Skill ZIP：适用于 Codex 与 Claude Code" src="docs/download-skill.png" width="100%"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-workbuddy.zip"><img alt="下载 WorkBuddy ZIP：适用于 WorkBuddy Open Platform" src="docs/download-workbuddy.svg" width="100%"></a>
+  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-workbuddy.zip"><img alt="下载 WorkBuddy ZIP：适用于 WorkBuddy Open Platform" src="docs/download-workbuddy.png" width="100%"></a>
 </p>
 
 <p align="center">
@@ -55,7 +55,7 @@ python --version
 ```
 
 <h3 id="openai-codex" align="center">
-  <img src="docs/platform-codex.svg" alt="01 OpenAI Codex：推荐使用通用 Skill ZIP" width="100%">
+  <img src="docs/platform-codex.png" alt="OpenAI Codex：推荐使用通用 Skill ZIP" width="100%">
 </h3>
 
 **ZIP 一键安装**
@@ -91,7 +91,7 @@ python3 "$skill_dir/tools/validate_adapters.py"
 安装后新建一个 Codex 任务，并用 `$soil-city-county-chronicle` 显式调用一次。若未发现技能，先确认目标目录中直接存在 `SKILL.md`，且没有多套一层仓库目录。
 
 <h3 id="claude-code" align="center">
-  <img src="docs/platform-claude.svg" alt="02 Claude Code：兼容 Agent Skills 目录结构" width="100%">
+  <img src="docs/platform-claude.png" alt="Claude Code：兼容 Agent Skills 目录结构" width="100%">
 </h3>
 
 ```powershell
@@ -103,7 +103,7 @@ python (Join-Path $skillDir "tools\validate_adapters.py")
 macOS / Linux 将目标目录改为 `${HOME}/.claude/skills/soil-city-county-chronicle`。根目录遵循 Agent Skills 的 `SKILL.md` 结构。
 
 <h3 id="workbuddy-open-platform" align="center">
-  <img src="docs/platform-workbuddy.svg" alt="03 WorkBuddy Open Platform：提供专用导入包" width="100%">
+  <img src="docs/platform-workbuddy.png" alt="WorkBuddy Open Platform：提供专用导入包" width="100%">
 </h3>
 
 ```powershell

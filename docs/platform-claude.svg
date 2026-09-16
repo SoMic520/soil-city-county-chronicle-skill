@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="104" viewBox="0 0 900 104" role="img" aria-labelledby="title desc">
-  <title id="title">Claude Code 安装方式</title><desc id="desc">平台二，兼容 Agent Skills 目录结构</desc>
-  <rect x="2" y="2" width="896" height="100" rx="18" fill="#FBF2E9" stroke="#E5C3A5" stroke-width="2"/><rect x="2" y="2" width="14" height="100" rx="7" fill="#A95D36"/>
-  <circle cx="70" cy="52" r="28" fill="#A95D36"/><text x="70" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">02</text>
-  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif"><text x="118" y="48" font-size="27" font-weight="700" fill="#713D27">Claude Code</text><text x="118" y="75" font-size="17" fill="#765A49">遵循 Agent Skills 的 SKILL.md 结构 · 支持通用发布包</text><rect x="680" y="31" width="190" height="42" rx="21" fill="#A95D36"/><text x="775" y="58" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">兼容 · Agent Skills</text></g>
-</svg>
