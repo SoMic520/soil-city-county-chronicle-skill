@@ -138,18 +138,18 @@ def primary_download(output: Path) -> None:
 
 
 def workbuddy_download(output: Path) -> None:
-    canvas = Image.new("RGBA", (sc(292), sc(40)), (0, 0, 0, 0))
+    canvas = Image.new("RGBA", (sc(340), sc(40)), (0, 0, 0, 0))
     draw = ImageDraw.Draw(canvas)
-    draw.rounded_rectangle(box((1, 1, 291, 39)), radius=sc(5), fill="#EAF4EF", outline="#2E6B4E", width=sc(1))
+    draw.rounded_rectangle(box((1, 1, 339, 39)), radius=sc(5), fill="#EAF4EF", outline="#2E6B4E", width=sc(1))
     draw.rounded_rectangle(box((1, 1, 45, 39)), radius=sc(5), fill="#D8ECE3")
     draw.rectangle(box((40, 1, 47, 39)), fill="#D8ECE3")
-    draw.rounded_rectangle(box((218, 1, 291, 39)), radius=sc(5), fill="#2E6B4E")
-    draw.rectangle(box((218, 1, 224, 39)), fill="#2E6B4E")
+    draw.rounded_rectangle(box((266, 1, 339, 39)), radius=sc(5), fill="#2E6B4E")
+    draw.rectangle(box((266, 1, 272, 39)), fill="#2E6B4E")
 
     icon = rounded_icon(ICONS / "workbuddy.png", 27, radius=7)
     paste_center(canvas, icon, (23, 20))
     draw.text((sc(54), sc(20)), "WorkBuddy ZIP", font=font(16, bold=True), fill="#173E31", anchor="lm")
-    draw.text((sc(255), sc(19)), "下载", font=font(14, bold=True), fill="#FFFFFF", anchor="mm")
+    draw.text((sc(303), sc(19)), "下载", font=font(14, bold=True), fill="#FFFFFF", anchor="mm")
     canvas.save(output, optimize=True)
 
 

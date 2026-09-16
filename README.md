@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-skill.zip"><img alt="下载通用 Skill ZIP：适用于 Codex 与 Claude Code" src="docs/download-skill.png" width="340"></a>
-  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-workbuddy.zip"><img alt="下载 WorkBuddy ZIP：适用于 WorkBuddy Open Platform" src="docs/download-workbuddy.png" width="292"></a>
+  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-workbuddy.zip"><img alt="下载 WorkBuddy ZIP：适用于 WorkBuddy Open Platform" src="docs/download-workbuddy.png" width="340"></a>
 </p>
 
 <p align="center">
