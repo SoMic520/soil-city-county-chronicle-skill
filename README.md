@@ -1,5 +1,13 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="三普市县级土壤志撰写与排版 Skill" width="100%">
+  <img src="docs/banner.png" alt="三普市县级土壤志撰写与排版 Skill" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-skill.zip"><img alt="下载通用 Skill ZIP：适用于 Codex 与 Claude Code" src="docs/download-skill.svg" width="100%"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-workbuddy.zip"><img alt="下载 WorkBuddy ZIP：适用于 WorkBuddy Open Platform" src="docs/download-workbuddy.svg" width="100%"></a>
 </p>
 
 <p align="center">
@@ -8,11 +16,6 @@
   <a href="scripts/"><img alt="Tests" src="https://img.shields.io/badge/tests-automated-2E6B4E?style=flat-square"></a>
   <a href="scripts/"><img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white"></a>
   <a href="SKILL.md"><img alt="Language" src="https://img.shields.io/badge/language-简体中文-A95D36?style=flat-square"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-skill.zip"><img alt="下载通用Skill ZIP" src="https://img.shields.io/badge/下载-通用%20Skill%20ZIP-F0A34A?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
-  <a href="https://github.com/SoMic520/soil-city-county-chronicle-skill/releases/latest/download/soil-city-county-chronicle-workbuddy.zip"><img alt="下载WorkBuddy ZIP" src="https://img.shields.io/badge/下载-WorkBuddy%20ZIP-2E6B4E?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
 </p>
 
 <p align="center">
@@ -51,7 +54,9 @@ git --version
 python --version
 ```
 
-### OpenAI Codex
+<h3 id="openai-codex" align="center">
+  <img src="docs/platform-codex.svg" alt="01 OpenAI Codex：推荐使用通用 Skill ZIP" width="100%">
+</h3>
 
 **ZIP 一键安装**
 
@@ -85,7 +90,9 @@ python3 "$skill_dir/tools/validate_adapters.py"
 
 安装后新建一个 Codex 任务，并用 `$soil-city-county-chronicle` 显式调用一次。若未发现技能，先确认目标目录中直接存在 `SKILL.md`，且没有多套一层仓库目录。
 
-### Claude Code
+<h3 id="claude-code" align="center">
+  <img src="docs/platform-claude.svg" alt="02 Claude Code：兼容 Agent Skills 目录结构" width="100%">
+</h3>
 
 ```powershell
 $skillDir = Join-Path $env:USERPROFILE ".claude\skills\soil-city-county-chronicle"
@@ -95,7 +102,9 @@ python (Join-Path $skillDir "tools\validate_adapters.py")
 
 macOS / Linux 将目标目录改为 `${HOME}/.claude/skills/soil-city-county-chronicle`。根目录遵循 Agent Skills 的 `SKILL.md` 结构。
 
-### WorkBuddy Open Platform
+<h3 id="workbuddy-open-platform" align="center">
+  <img src="docs/platform-workbuddy.svg" alt="03 WorkBuddy Open Platform：提供专用导入包" width="100%">
+</h3>
 
 ```powershell
 git clone https://github.com/SoMic520/soil-city-county-chronicle-skill.git

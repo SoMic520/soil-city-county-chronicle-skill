@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="104" viewBox="0 0 900 104" role="img" aria-labelledby="title desc">
+  <title id="title">WorkBuddy Open Platform 安装方式</title><desc id="desc">平台三，提供专用 ZIP 导入包</desc>
+  <rect x="2" y="2" width="896" height="100" rx="18" fill="#EEF4F8" stroke="#B8CDD9" stroke-width="2"/><rect x="2" y="2" width="14" height="100" rx="7" fill="#376B82"/>
+  <circle cx="70" cy="52" r="28" fill="#376B82"/><text x="70" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">03</text>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif"><text x="118" y="48" font-size="27" font-weight="700" fill="#294F62">WorkBuddy Open Platform</text><text x="118" y="75" font-size="17" fill="#5A6E79">使用专用 ZIP 直接导入 · 同步保留完整技能说明与资源</text><rect x="680" y="31" width="190" height="42" rx="21" fill="#376B82"/><text x="775" y="58" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">专用 · WorkBuddy ZIP</text></g>
+</svg>
