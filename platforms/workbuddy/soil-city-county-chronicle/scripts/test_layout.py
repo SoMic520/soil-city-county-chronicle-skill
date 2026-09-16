@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class LayoutTests(unittest.TestCase):
     def setUp(self):
-        self.base = json.loads((ROOT / 'assets/project/layout.json').read_text(encoding='utf-8'))
+        self.base = json.loads((ROOT / 'templates/project/layout.json').read_text(encoding='utf-8'))
         self.plan = copy.deepcopy(self.base)
 
     def codes(self, final=False):

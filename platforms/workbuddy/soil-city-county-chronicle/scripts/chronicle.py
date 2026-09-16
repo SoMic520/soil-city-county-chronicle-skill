@@ -49,7 +49,7 @@ def number(value):
 
 
 def table(folder, name, key):
-    template = ROOT / 'assets' / 'project' / name
+    template = ROOT / 'templates' / 'project' / name
     with template.open(encoding='utf-8-sig', newline='') as f:
         expected = next(csv.reader(f))
     with (folder / name).open(encoding='utf-8-sig', newline='') as f:
@@ -303,7 +303,7 @@ def check_project(folder, final=False):
             if reviews.get(key, {}).get('done') is not True or not reviews[key].get('evidence'):
                 issue('REVIEW', key, '人工检查未完成或无检查记录')
         layout = json.loads((folder / 'layout.json').read_text(encoding='utf-8-sig'))
-        baseline = json.loads((ROOT / 'assets' / 'project' / 'layout.json').read_text(encoding='utf-8'))
+        baseline = json.loads((ROOT / 'templates' / 'project' / 'layout.json').read_text(encoding='utf-8'))
         layout_issues, layout_notes = validate_layout(layout, baseline, final=True)
         issues.extend(layout_issues)
         notes.extend(layout_notes)
@@ -385,7 +385,7 @@ def coverage_checks(folder, data, sections, topics, sources, evidence, figures, 
             else:
                 notes.append(f'{filename}: 尚未建台账；正式交付前补齐')
     requirements, soil_types, gaps = (rows[k] for k in ('requirements.csv', 'soil_types.csv', 'gaps.csv'))
-    expected_requirements = table(ROOT / 'assets' / 'project', 'requirements.csv', 'requirement_id')
+    expected_requirements = table(ROOT / 'templates' / 'project', 'requirements.csv', 'requirement_id')
     if final:
         for rid in sorted(set(expected_requirements) - set(requirements)):
             issue('REQUIREMENT_MISSING', rid, '缺基本内容映射；重排不应删除覆盖项')
@@ -722,13 +722,13 @@ def initialize(destination):
     destination = Path(destination)
     if destination.exists():
         raise ValueError('destination exists; choose a new directory (nothing overwritten)')
-    shutil.copytree(ROOT / 'assets' / 'project', destination)
+    shutil.copytree(ROOT / 'templates' / 'project', destination)
     return {'created': str(destination.resolve()), 'note': '模板待填写，不是已验证市县级项目数据'}
 
 
 def check_layout_file(path, final=False):
     layout = json.loads(Path(path).read_text(encoding='utf-8-sig'))
-    baseline = json.loads((ROOT / 'assets' / 'project' / 'layout.json').read_text(encoding='utf-8'))
+    baseline = json.loads((ROOT / 'templates' / 'project' / 'layout.json').read_text(encoding='utf-8'))
     issues, notes = validate_layout(layout, baseline, final)
     return {'kind': 'layout_plan_check_only', 'tool_version': TOOL_VERSION, 'issues': issues, 'notes': notes,
             'limitation': '只核排版配置和检查记录；未读取DOCX样式、更新域、打开或渲染页面。'}

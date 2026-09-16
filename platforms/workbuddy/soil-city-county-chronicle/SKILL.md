@@ -1,7 +1,17 @@
 ---
 name: soil-city-county-chronicle
-description: 依据已有三普成果报告和地方资料，自动识别市级或县级成果层级，编纂、续写、审查或规范排版市县级土壤志。先建立层级、资料与证据台账，再按适用导引形成章节契约和可追溯志稿；土特产等专题按适用性处理。不替代原始土壤调查、检测或重新评价。
+display_name: 三普市县级土壤志撰写与排版
+display_name_en: Municipal and County Soil Chronicle Writing
+description: 依据已有三普成果报告和地方资料，自动识别市县级并完成土壤志资料核验、证据编纂、篇幅控制、专业审查与规范排版
+description_zh: 自动识别市县级，从已有报告形成证据可追溯、篇幅受控、格式规范的土壤志
+description_en: Detect municipal or county scope and build evidence-traceable, length-controlled, standards-aligned soil chronicles
+category: writing
+version: 5.0.0
+author: Soil City-County Chronicle Maintainers
+user-invocable: true
+disable-model-invocation: false
 ---
+
 
 # 市县级土壤志撰写与排版
 
@@ -9,7 +19,7 @@ description: 依据已有三普成果报告和地方资料，自动识别市级�
 
 ## 开始时做什么
 
-先说明正在使用本技能，简述当前材料和工作模式。完整阅读[市县级识别与模板差异](references/levels.md)、[依据与适用范围](references/sources.md)、[资料准备](references/intake.md)和[篇幅契约](references/length.md)，再盘点实际文件。截图、文件名、目录只能用于登记，不能证明报告内容、审定状态或数据质量。
+先说明正在使用本技能，简述当前材料和工作模式。完整阅读市县级识别与模板差异（@references/levels.md）、依据与适用范围（@references/sources.md）、资料准备（@references/intake.md）和篇幅契约（@references/length.md），再盘点实际文件。截图、文件名、目录只能用于登记，不能证明报告内容、审定状态或数据质量。
 
 先用用户说明、任务书、正式适用导引、模板正文和成果汇总特征识别`municipal`、`county`或`unknown`。行政名称以“市”结尾可能是地级市或县级市，不能只凭地名后缀判断。层级不明时继续共享的资料整理和证据工作，但不锁定层级专属的第三章、篇幅模板和验收规则。
 
@@ -39,7 +49,7 @@ description: 依据已有三普成果报告和地方资料，自动识别市级�
 | Word 排版、字段修复 | 必须完整读取layout、quality | 三普基准对齐的配置、逐项格式检查、工作副本及实际全页渲染 |
 | 全志终审、归档 | 全部相关资源，重点 length、quality | 内容、篇幅和版面报告、定稿或未完成项说明 |
 
-资源路径：[levels](references/levels.md)、[length](references/length.md)、[evidence](references/evidence.md)、[chapters](references/chapters.md)、[writing](references/writing.md)、[layout](references/layout.md)、[quality](references/quality.md)。读到一个资源时应完整阅读，不用搜索命中片段代替规则。
+资源路径：levels（@references/levels.md）、length（@references/length.md）、evidence（@references/evidence.md）、chapters（@references/chapters.md）、writing（@references/writing.md）、layout（@references/layout.md）、quality（@references/quality.md）。读到一个资源时应完整阅读，不用搜索命中片段代替规则。
 
 ## 阶段门槛
 
@@ -53,7 +63,7 @@ description: 依据已有三普成果报告和地方资料，自动识别市级�
 
 ## 可直接使用的模板与工具
 
-[assets/project](assets/project) 可复制为工作目录：项目状态、资料台账、证据、指标、冲突、可比性、图件、必需内容映射、层级对应的分类单元覆盖、具体缺口、格式配置及写作检查模板。先据实际资料填写，不能仅填六章“完成”就视为内容齐备。示例字段是待填写的业务槽位，不是目标地区事实；正式稿不得残留模板提示。
+`templates/project` 可复制为工作目录：项目状态、资料台账、证据、指标、冲突、可比性、图件、必需内容映射、层级对应的分类单元覆盖、具体缺口、格式配置及写作检查模板。先据实际资料填写，不能仅填六章“完成”就视为内容齐备。示例字段是待填写的业务槽位，不是目标地区事实；正式稿不得残留模板提示。
 
 辅助脚本仅依赖 Python 3.9 或以上的标准库；先发现本机 Python，不写入个人绝对路径。
 

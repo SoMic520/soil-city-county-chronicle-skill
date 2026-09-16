@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: 数据安全说明
-    url: https://github.com/
-    about: 提交问题前请先阅读仓库中的SECURITY.md，不要公开真实县级资料。
+    url: https://github.com/SoMic520/soil-city-county-chronicle-skill/security/policy
+    about: 提交问题前请先阅读仓库中的SECURITY.md，不要公开真实市县级资料。

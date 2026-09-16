@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKBUDDY = ROOT / 'platforms' / 'workbuddy' / 'soil-county-chronicle'
+WORKBUDDY = ROOT / 'platforms' / 'workbuddy' / 'soil-city-county-chronicle'
 
 
 def frontmatter(path):
@@ -35,7 +35,7 @@ def main():
     if '@references/' not in body or 'assets/project' in body:
         raise ValueError('WorkBuddy body resource routing is incomplete')
     metadata = json.loads((WORKBUDDY / 'BUILD-METADATA.json').read_text(encoding='utf-8'))
-    if metadata.get('contains_archive') or metadata.get('contains_county_data'):
+    if metadata.get('contains_archive') or metadata.get('contains_local_project_data'):
         raise ValueError('adapter metadata violates repository data boundary')
     forbidden = {'.zip', '.7z', '.rar', '.doc', '.docx', '.pdf', '.xls', '.xlsx', '.shp', '.gpkg'}
     found = [str(path.relative_to(ROOT)) for path in ROOT.rglob('*') if path.is_file() and path.suffix.lower() in forbidden]
@@ -46,4 +46,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

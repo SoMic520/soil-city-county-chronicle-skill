@@ -1,6 +1,6 @@
 """Build a source-only WorkBuddy skill mirror from the canonical repository root.
 
-The generated folder intentionally contains no ZIP and no county project data.
+The generated folder intentionally contains no ZIP and no local project data.
 """
 import json
 import re
@@ -9,20 +9,20 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / 'platforms' / 'workbuddy' / 'soil-county-chronicle'
+OUTPUT = ROOT / 'platforms' / 'workbuddy' / 'soil-city-county-chronicle'
 SOURCE_SKILL = ROOT / 'SKILL.md'
 
 
 WORKBUDDY_FRONTMATTER = '''---
-name: soil-county-chronicle
-display_name: 三普县级土壤志撰写与排版
-display_name_en: County Soil Chronicle Writing and Layout
-description: 依据已有三普成果报告和地方资料，完成县级土壤志资料核验、证据编纂、篇幅控制、专业审查与规范排版
-description_zh: 从已有报告出发，形成证据可追溯、篇幅受控、格式规范的县级土壤志
-description_en: Build evidence-traceable, length-controlled and standards-aligned county soil chronicles from existing survey reports
+name: soil-city-county-chronicle
+display_name: 三普市县级土壤志撰写与排版
+display_name_en: Municipal and County Soil Chronicle Writing
+description: 依据已有三普成果报告和地方资料，自动识别市县级并完成土壤志资料核验、证据编纂、篇幅控制、专业审查与规范排版
+description_zh: 自动识别市县级，从已有报告形成证据可追溯、篇幅受控、格式规范的土壤志
+description_en: Detect municipal or county scope and build evidence-traceable, length-controlled, standards-aligned soil chronicles
 category: writing
-version: 4.0.0
-author: Soil County Chronicle Maintainers
+version: 5.0.0
+author: Soil City-County Chronicle Maintainers
 user-invocable: true
 disable-model-invocation: false
 ---
@@ -59,11 +59,11 @@ def main():
     metadata = {
         'adapter': 'workbuddy-open-platform',
         'adapter_version': 1,
-        'canonical_skill_version': '2026-09-07-r4',
-        'workbuddy_skill_version': '4.0.0',
+        'canonical_skill_version': '2026-09-16-r5',
+        'workbuddy_skill_version': '5.0.0',
         'source': '../../../SKILL.md',
         'contains_archive': False,
-        'contains_county_data': False,
+        'contains_local_project_data': False,
     }
     (OUTPUT / 'BUILD-METADATA.json').write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'

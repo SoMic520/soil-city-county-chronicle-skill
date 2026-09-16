@@ -1,0 +1,9 @@
+{
+  "adapter": "workbuddy-open-platform",
+  "adapter_version": 1,
+  "canonical_skill_version": "2026-09-16-r5",
+  "workbuddy_skill_version": "5.0.0",
+  "source": "../../../SKILL.md",
+  "contains_archive": false,
+  "contains_local_project_data": false
+}

@@ -1,4 +1,4 @@
 interface:
-  display_name: "三普县级土壤志撰写与排版"
-  short_description: "从已有报告和前期资料出发，完成县级土壤志证据核验、专业撰写与规范排版"
-  default_prompt: "使用 $soil-county-chronicle，先盘点已有报告、判断专题适用性并建立证据台账，再编写和排版县级土壤志。"
+  display_name: "三普市县级土壤志撰写与排版"
+  short_description: "自动识别市县级，从已有报告完成证据核验、专业撰写与规范排版"
+  default_prompt: "使用 $soil-city-county-chronicle，先识别市级或县级并说明证据，再盘点已有报告、判断专题适用性并建立证据台账，按适用导引编写和排版土壤志。"

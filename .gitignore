@@ -12,7 +12,7 @@ venv/
 *.key
 *.pem
 
-# Office, GIS and county project data must not enter the source repository
+# Office, GIS and municipal/county project data must not enter the source repository
 *.doc
 *.docx
 *.pdf
@@ -45,4 +45,3 @@ dist/
 .DS_Store
 Thumbs.db
 desktop.ini
-
