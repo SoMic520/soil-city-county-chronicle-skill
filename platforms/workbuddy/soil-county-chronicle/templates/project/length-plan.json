@@ -1,0 +1,36 @@
+{
+  "length_schema_version": 1,
+  "measurement_version": "narrative-effective-characters-v1",
+  "status": "planning",
+  "template": {
+    "identity": "邵东市土壤_修复版.docx（参考样稿；具体项目须确认适用性与可访问副本）",
+    "path": "",
+    "sha256": "8d466b60cfd8503e286fdad19998389c3c770c6fb5fe861419ace6a12349321a",
+    "measurement_evidence": "2026-09-07按references/length.md口径只读计量；具体项目须复核",
+    "chapters": {"1": 13139, "2": 16459, "3": 117003, "4": 30187, "5": 25295, "6": 24260}
+  },
+  "project_structure": {
+    "soil_types": null,
+    "property_indicators": null,
+    "evaluation_modules": null,
+    "recommendation_topics": null,
+    "basis": ""
+  },
+  "chapters": {
+    "1": {"target": null, "lower": null, "upper": null, "adaptation_kind": null, "template_structure_count": null, "template_fixed_characters": null, "template_structure_evidence": "", "adaptation_basis": "", "actual": null},
+    "2": {"target": null, "lower": null, "upper": null, "adaptation_kind": null, "template_structure_count": null, "template_fixed_characters": null, "template_structure_evidence": "", "adaptation_basis": "", "actual": null},
+    "3": {"target": null, "lower": null, "upper": null, "adaptation_kind": "soil_types", "template_structure_count": null, "template_fixed_characters": null, "template_structure_evidence": "", "adaptation_basis": "", "actual": null},
+    "4": {"target": null, "lower": null, "upper": null, "adaptation_kind": "property_indicators", "template_structure_count": null, "template_fixed_characters": null, "template_structure_evidence": "", "adaptation_basis": "", "actual": null},
+    "5": {"target": null, "lower": null, "upper": null, "adaptation_kind": "evaluation_modules", "template_structure_count": null, "template_fixed_characters": null, "template_structure_evidence": "", "adaptation_basis": "", "actual": null},
+    "6": {"target": null, "lower": null, "upper": null, "adaptation_kind": "recommendation_topics", "template_structure_count": null, "template_fixed_characters": null, "template_structure_evidence": "", "adaptation_basis": "", "actual": null}
+  },
+  "total": {"target": null, "lower": null, "upper": null, "actual": null},
+  "formal_override": {
+    "active": false,
+    "basis": "",
+    "locator": "",
+    "confirmed_by": "",
+    "counting_method": "",
+    "handling": "正式合同、地方验收文件或书面确认的结构性例外与本计划冲突时，先登记并由有权责任方裁决，不静默改预算"
+  }
+}

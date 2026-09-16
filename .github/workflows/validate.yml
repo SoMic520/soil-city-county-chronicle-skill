@@ -1,0 +1,27 @@
+name: Validate Skill
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Canonical regression tests
+        run: python -m unittest discover -s scripts -p "test_*.py"
+      - name: Adapter validation
+        run: python tools/validate_adapters.py
+      - name: WorkBuddy adapter regression tests
+        run: python -m unittest discover -s platforms/workbuddy/soil-county-chronicle/scripts -p "test_*.py"
+

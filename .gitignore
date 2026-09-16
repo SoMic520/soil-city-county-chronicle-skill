@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local environments and secrets
+.env
+.env.*
+.venv/
+venv/
+*.key
+*.pem
+
+# Office, GIS and county project data must not enter the source repository
+*.doc
+*.docx
+*.pdf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.zip
+*.7z
+*.rar
+*.gdb/
+*.gpkg
+*.shp
+*.dbf
+*.shx
+*.tif
+*.tiff
+
+# Generated/local work
+资料准备工作台/
+skill-build/
+.repair-work/
+rendered/
+output/
+dist/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+

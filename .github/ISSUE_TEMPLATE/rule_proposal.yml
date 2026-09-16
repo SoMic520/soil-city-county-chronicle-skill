@@ -1,0 +1,38 @@
+name: 规则改进建议
+description: 提议新增或修订规范、篇幅、写作或排版规则
+title: "[Rule] "
+labels: ["enhancement", "documentation"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: 依据文件
+      description: 文件名、发布机构、文号和版本日期。
+    validations:
+      required: true
+  - type: input
+    id: locator
+    attributes:
+      label: 条款或页码
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议规则
+      description: 说明适用对象、强制程度和与现有规则的关系。
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: 可能冲突与例外
+      description: 如果地方要求、合同或其他规范不同，应如何处理？
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: 建议测试情景
+      description: 只使用匿名合成数据。
+

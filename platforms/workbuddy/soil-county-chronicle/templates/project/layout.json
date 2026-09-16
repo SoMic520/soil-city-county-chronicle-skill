@@ -1,0 +1,301 @@
+{
+  "layout_schema_version": 2,
+  "format_profile": "soil-third-survey-aligned-county-v1",
+  "adoption_confirmed": false,
+  "basis": "N1-format（2024年7月县级导引，印刷85页）＋用户指定的三普skill强制排版基准SFORMAT；详见references/layout.md",
+  "styles": {
+    "chapter": {
+      "style": "Heading 1",
+      "outline_level": 0,
+      "numbering": "第{中文章序}章",
+      "font": "宋体",
+      "pt": 18,
+      "bold": true,
+      "align": "center",
+      "first_line_chars": 0
+    },
+    "level_1": {
+      "style": "Heading 2",
+      "outline_level": 1,
+      "numbering": "一、",
+      "font": "黑体",
+      "pt": 16,
+      "bold": false,
+      "align": "left",
+      "first_line_chars": 2
+    },
+    "level_2": {
+      "style": "Heading 3",
+      "outline_level": 2,
+      "numbering": "（一）",
+      "font": "宋体",
+      "pt": 14,
+      "bold": true,
+      "align": "left",
+      "first_line_chars": 2
+    },
+    "level_3": {
+      "style": "Heading 4",
+      "outline_level": 3,
+      "numbering": "1. ",
+      "font": "黑体",
+      "pt": 12,
+      "bold": false,
+      "align": "left",
+      "first_line_chars": 2
+    },
+    "level_4": {
+      "style": "Heading 5",
+      "outline_level": 4,
+      "numbering": "（1）",
+      "font": "宋体",
+      "pt": 12,
+      "bold": true,
+      "align": "left",
+      "first_line_chars": 2
+    },
+    "body": {
+      "style": "正文",
+      "font": "宋体",
+      "pt": 12,
+      "first_line_chars": 2,
+      "left_indent_chars": 0,
+      "right_indent_chars": 0,
+      "line_spacing_multiple": 1,
+      "before_pt": 0,
+      "after_pt": 0
+    },
+    "caption": {
+      "style": "题注",
+      "font": "黑体",
+      "pt": 10.5,
+      "bold": false,
+      "align": "center",
+      "first_line_chars": 0,
+      "line_spacing_multiple": 1,
+      "before_pt": 0,
+      "after_pt": 0
+    },
+    "front_title": {
+      "style": "Heading 2",
+      "font": "黑体",
+      "pt": 16,
+      "bold": false,
+      "align": "center",
+      "first_line_chars": 0,
+      "automatic_numbering": false
+    },
+    "page_number": {
+      "font": "Times New Roman",
+      "pt": 10.5,
+      "align": "center",
+      "first_line_chars": 0,
+      "before_pt": 0,
+      "after_pt": 0
+    },
+    "table_text": {
+      "pt": 10.5,
+      "first_line_chars": 0,
+      "line_spacing_multiple": 1,
+      "before_pt": 0,
+      "after_pt": 0
+    },
+    "image_paragraph": {
+      "align": "center",
+      "first_line_chars": 0,
+      "left_indent_chars": 0,
+      "right_indent_chars": 0
+    },
+    "toc_entry": {
+      "first_line_chars": 0
+    }
+  },
+  "execution": {
+    "headings": {
+      "use_chapter_titles": true,
+      "before_lines": 0.5,
+      "after_lines": 0.5,
+      "left_right_indent_chars": 0,
+      "do_not_create_unneeded_levels": true,
+      "numbering_bound_to_styles": true
+    },
+    "text": {
+      "latin_font": "Times New Roman",
+      "color": "000000",
+      "circled_number_following_spaces": 1,
+      "numbered_level_3_following_spaces": 1,
+      "preserve_subscripts_superscripts": true
+    },
+    "pages": {
+      "paper": "A4",
+      "orientation": "portrait",
+      "mirror_margins": false,
+      "margins_mm": {
+        "top": 25.4,
+        "bottom": 25.4,
+        "left": 31.8,
+        "right": 31.8
+      },
+      "preserve_special_section_geometry": true
+    },
+    "page_numbers": {
+      "front_format": "upperRoman",
+      "front_start": 1,
+      "body_format": "decimal",
+      "body_start": 1,
+      "position": "footer_center",
+      "real_fields": true,
+      "separate_front_and_body_sections": true,
+      "cover_visible": false
+    },
+    "cover": {
+      "heading_style_allowed": false,
+      "outline_level_allowed": false,
+      "first_line_chars": 0,
+      "logo_inline": true,
+      "logo_align": "center",
+      "logo_paragraph_single_spacing": true,
+      "preserve_reference_logo_size": true,
+      "reference_logo_spacing_pt_if_selected": 8.15,
+      "no_reference_blank_paragraphs_between_items": 1,
+      "preserve_confirmed_word_wps_geometry": true
+    },
+    "toc": {
+      "real_fields": true,
+      "separate_figure_and_table_indexes": true,
+      "clear_first_line_direct_and_style": true,
+      "update_and_recheck": true,
+      "selection": "project_confirmed_semantic_levels",
+      "exclude_cover_captions_and_toc_self": true
+    },
+    "captions": {
+      "independent_figure_table_sequences": true,
+      "chapter_number_from_heading": true,
+      "number_title_spaces": 1,
+      "table_title_position": "above",
+      "figure_title_position": "below",
+      "real_cross_references": true
+    },
+    "blocks": {
+      "explanation_position": "before",
+      "reference_in_first_substantive_result_sentence": true,
+      "blank_paragraphs_after_explanation": 1,
+      "blank_paragraphs_after_last_note_or_object": 1,
+      "blank_paragraphs_between_adjacent_objects": 1,
+      "spacing_is_not_blank_paragraph": true,
+      "keep_notes_with_object": true,
+      "force_explanation_and_large_object_same_page": false,
+      "allow_move_only_within_same_analysis_section": true
+    },
+    "tables": {
+      "width_percent_of_text_area": 100,
+      "autofit": "window",
+      "align": "center",
+      "left_indent_mm": 0,
+      "fixed_row_height": false,
+      "repeat_header_rows": true,
+      "header_bold": true,
+      "body_bold_unless_meaningful": false,
+      "shading": false,
+      "border_style": "single",
+      "border_color": "000000",
+      "no_forced_border_weight": true,
+      "remove_overlapping_borders": true,
+      "allow_natural_page_breaks": true,
+      "retain_merged_cells_and_data": true
+    },
+    "figures": {
+      "body_align": "center",
+      "preserve_aspect_ratio": true,
+      "no_crop_or_stretch": true,
+      "protect_user_designated_objects": true,
+      "no_generative_scientific_photo_edit": true
+    },
+    "styles_cleanup": {
+      "preserve_used_and_dependencies": true,
+      "check_basedOn_next_link": true,
+      "no_duplicate_near_identical_styles": true
+    },
+    "delivery": {
+      "real_field_update": true,
+      "reopen_saved_docx": true,
+      "render_same_final_version": true,
+      "review_all_pages": true,
+      "compare_content_objects_revisions": true
+    }
+  },
+  "county_requirements": {
+    "cover_color": "白色",
+    "binding": "胶装、双面；适宜厚度时有书脊",
+    "references": "著者—出版年；中文拼音序在前，英文按字母序在后",
+    "area_mu_decimals": 0,
+    "area_wanmu_decimals": 2,
+    "property_decimals_general": 1,
+    "other_decimal_values_without_specific_rule": 2,
+    "precision_note": "执行SFORMAT的正式导引优先例外；土壤属性按N1一般1位，特殊指标保留依据，不增造精度，不由显示值分级或复算",
+    "appendix_maps": "土壤类型图、关键属性图；A3彩色折页",
+    "toc_max_depth": 2,
+    "toc_rule": "N1按具体情况采用一级或二级；toc_semantic_levels用有序样式角色数组选择，不自动收录所有五层"
+  },
+  "target_application": "",
+  "toc_semantic_levels": [],
+  "project_details": {
+    "table_chinese_font": "",
+    "header_distance_mm": null,
+    "footer_distance_mm": null,
+    "reference_cover": "",
+    "selected_logo_reference": false
+  },
+  "project_overrides_with_basis": [],
+  "preserved_sections_and_objects": [],
+  "format_checks": {
+    "pages_and_sections": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "cover": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "headings": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "fonts_and_units": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "toc_and_page_numbers": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "captions_and_references": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "figure_blocks": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "table_blocks": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "spacing_and_pagination": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "styles_dependencies": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "protected_objects": {
+      "status": "pending",
+      "evidence": ""
+    },
+    "rendered_pages": {
+      "status": "pending",
+      "evidence": ""
+    }
+  }
+}

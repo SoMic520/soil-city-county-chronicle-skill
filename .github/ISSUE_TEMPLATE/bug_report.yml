@@ -1,0 +1,48 @@
+name: 缺陷报告
+description: 报告脚本、规则路由或模板中的可复现问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿上传真实县级数据、未公开报告、坐标、账号信息或访问令牌。
+  - type: input
+    id: version
+    attributes:
+      label: Skill版本
+      placeholder: 例如 2026-09-07-r4
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题模块
+      options:
+        - 资料与证据台账
+        - 章节与土种编纂
+        - 篇幅契约
+        - 排版与DOCX检查
+        - 初始化或终稿门槛
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 最小复现步骤
+      description: 使用匿名合成数据说明输入、命令和实际结果。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 日志或脱敏证据
+      description: 请先移除县名、坐标、路径中的人员信息和任何凭据。
+
