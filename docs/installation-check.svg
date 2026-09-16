@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">安装前检查</title>
+  <desc id="desc">安装前检查Git、Python 3.9以上版本以及目标平台</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#173E31" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="1198" height="188" rx="18" fill="#F7FAF8" stroke="#D5E2DC"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" fill="#263A31">
+    <g transform="translate(24 24)" filter="url(#shadow)">
+      <rect width="373" height="142" rx="14" fill="#FFFFFF" stroke="#C9DCD2"/>
+      <rect width="373" height="7" rx="4" fill="#EAAA50"/>
+      <circle cx="43" cy="49" r="19" fill="#FFF1D9"/>
+      <text x="43" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#8A5517">1</text>
+      <text x="76" y="55" font-size="22" font-weight="700">Git</text>
+      <text x="43" y="98" font-size="16" fill="#5C7066">用于克隆、更新和版本追踪</text>
+      <text x="43" y="123" font-size="14" fill="#7A8B83">运行 git --version 确认可用</text>
+    </g>
+    <g transform="translate(413 24)" filter="url(#shadow)">
+      <rect width="374" height="142" rx="14" fill="#FFFFFF" stroke="#C9DCD2"/>
+      <rect width="374" height="7" rx="4" fill="#4D8C6C"/>
+      <circle cx="43" cy="49" r="19" fill="#E2F1E9"/>
+      <text x="43" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#2E6B4E">2</text>
+      <text x="76" y="55" font-size="22" font-weight="700">Python 3.9+</text>
+      <text x="43" y="98" font-size="16" fill="#5C7066">仅使用标准库，无需 pip 安装依赖</text>
+      <text x="43" y="123" font-size="14" fill="#7A8B83">运行 python --version 确认可用</text>
+    </g>
+    <g transform="translate(803 24)" filter="url(#shadow)">
+      <rect width="373" height="142" rx="14" fill="#FFFFFF" stroke="#C9DCD2"/>
+      <rect width="373" height="7" rx="4" fill="#4877A6"/>
+      <circle cx="43" cy="49" r="19" fill="#E6EEF8"/>
+      <text x="43" y="56" text-anchor="middle" font-size="18" font-weight="700" fill="#355E88">3</text>
+      <text x="76" y="55" font-size="22" font-weight="700">目标平台</text>
+      <text x="43" y="98" font-size="16" fill="#5C7066">Codex · Claude Code · WorkBuddy</text>
+      <text x="43" y="123" font-size="14" fill="#7A8B83">选择对应目录或专用 ZIP</text>
+    </g>
+  </g>
+</svg>

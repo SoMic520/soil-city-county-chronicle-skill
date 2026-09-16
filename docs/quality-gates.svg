@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">质量门槛</title>
+  <desc id="desc">层级、资料、内容、数值和版面五项质量门槛</desc>
+  <rect x="1" y="1" width="1198" height="188" rx="18" fill="#F7FAF8" stroke="#D5E2DC"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif" fill="#263A31">
+    <g transform="translate(24 24)">
+      <rect width="221" height="142" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/>
+      <rect width="221" height="7" rx="4" fill="#EAAA50"/>
+      <circle cx="110.5" cy="48" r="21" fill="#FFF0D8"/><text x="110.5" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#875117">1</text>
+      <text x="110.5" y="91" text-anchor="middle" font-size="19" font-weight="700">层级门槛</text>
+      <text x="110.5" y="119" text-anchor="middle" font-size="14" fill="#65786E">市县级与导引匹配</text>
+    </g>
+    <g transform="translate(257 24)">
+      <rect width="221" height="142" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/>
+      <rect width="221" height="7" rx="4" fill="#D4924F"/>
+      <circle cx="110.5" cy="48" r="21" fill="#FBEBDD"/><text x="110.5" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#875117">2</text>
+      <text x="110.5" y="91" text-anchor="middle" font-size="19" font-weight="700">资料门槛</text>
+      <text x="110.5" y="119" text-anchor="middle" font-size="14" fill="#65786E">来源、版本、缺口可查</text>
+    </g>
+    <g transform="translate(490 24)">
+      <rect width="221" height="142" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/>
+      <rect width="221" height="7" rx="4" fill="#4D8C6C"/>
+      <circle cx="110.5" cy="48" r="21" fill="#E2F1E9"/><text x="110.5" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#2E6B4E">3</text>
+      <text x="110.5" y="91" text-anchor="middle" font-size="19" font-weight="700">内容门槛</text>
+      <text x="110.5" y="116" text-anchor="middle" font-size="14" fill="#65786E">章节、分类单元</text>
+      <text x="110.5" y="137" text-anchor="middle" font-size="14" fill="#65786E">专题可核</text>
+    </g>
+    <g transform="translate(723 24)">
+      <rect width="221" height="142" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/>
+      <rect width="221" height="7" rx="4" fill="#4877A6"/>
+      <circle cx="110.5" cy="48" r="21" fill="#E6EEF8"/><text x="110.5" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#355E88">4</text>
+      <text x="110.5" y="91" text-anchor="middle" font-size="19" font-weight="700">数值门槛</text>
+      <text x="110.5" y="119" text-anchor="middle" font-size="14" fill="#65786E">单位、分母、时期一致</text>
+    </g>
+    <g transform="translate(956 24)">
+      <rect width="220" height="142" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/>
+      <rect width="220" height="7" rx="4" fill="#6C6294"/>
+      <circle cx="110" cy="48" r="21" fill="#EEEAF7"/><text x="110" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#574D7E">5</text>
+      <text x="110" y="91" text-anchor="middle" font-size="19" font-weight="700">版面门槛</text>
+      <text x="110" y="119" text-anchor="middle" font-size="14" fill="#65786E">结构检查＋全页渲染</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
+  <title id="title">核心能力</title>
+  <desc id="desc">资料先行、自动识别市县级、证据可追溯、分层级章节契约、模板驱动篇幅和验收导引排版</desc>
+  <rect x="1" y="1" width="1198" height="408" rx="18" fill="#F7FAF8" stroke="#D5E2DC"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif">
+    <g transform="translate(24 24)">
+      <rect width="568" height="110" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/><rect width="7" height="110" rx="4" fill="#EAAA50"/>
+      <circle cx="44" cy="39" r="20" fill="#FFF0D8"/><text x="44" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#875117">01</text>
+      <text x="78" y="44" font-size="21" font-weight="700" fill="#263A31">资料先行</text>
+      <text x="28" y="78" font-size="15" fill="#5C7066">盘点总体、工作、类型、属性、数据、退化、耕地质量和适宜性等已有成果；</text>
+      <text x="28" y="99" font-size="15" fill="#5C7066">文件名不等于内容已核验。</text>
+    </g>
+    <g transform="translate(608 24)">
+      <rect width="568" height="110" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/><rect width="7" height="110" rx="4" fill="#4D8C6C"/>
+      <circle cx="44" cy="39" r="20" fill="#E2F1E9"/><text x="44" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#2E6B4E">02</text>
+      <text x="78" y="44" font-size="21" font-weight="700" fill="#263A31">自动识别市县级</text>
+      <text x="28" y="78" font-size="15" fill="#5C7066">综合任务文件、适用导引、模板标识和下级汇总特征判定层级；</text>
+      <text x="28" y="99" font-size="15" fill="#5C7066">“名称带市”不作为单独判据。</text>
+    </g>
+    <g transform="translate(24 150)">
+      <rect width="568" height="110" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/><rect width="7" height="110" rx="4" fill="#D4924F"/>
+      <circle cx="44" cy="39" r="20" fill="#FBEBDD"/><text x="44" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#875117">03</text>
+      <text x="78" y="44" font-size="21" font-weight="700" fill="#263A31">证据可追溯</text>
+      <text x="28" y="78" font-size="15" fill="#5C7066">建立“章节—主张—来源—指标—表图”追溯链；证据不足时只阻断</text>
+      <text x="28" y="99" font-size="15" fill="#5C7066">受影响表述，不虚构事实。</text>
+    </g>
+    <g transform="translate(608 150)">
+      <rect width="568" height="110" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/><rect width="7" height="110" rx="4" fill="#4877A6"/>
+      <circle cx="44" cy="39" r="20" fill="#E6EEF8"/><text x="44" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#355E88">04</text>
+      <text x="78" y="44" font-size="21" font-weight="700" fill="#263A31">分层级章节契约</text>
+      <text x="28" y="78" font-size="15" fill="#5C7066">市级强调县级成果核验、接边、制图综合和土类—亚类—土属；</text>
+      <text x="28" y="99" font-size="15" fill="#5C7066">县级深入亚类—土属—土种与典型剖面。</text>
+    </g>
+    <g transform="translate(24 276)">
+      <rect width="568" height="110" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/><rect width="7" height="110" rx="4" fill="#6C6294"/>
+      <circle cx="44" cy="39" r="20" fill="#EEEAF7"/><text x="44" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#574D7E">05</text>
+      <text x="78" y="44" font-size="21" font-weight="700" fill="#263A31">模板驱动篇幅</text>
+      <text x="28" y="78" font-size="15" fill="#5C7066">先实测同层级适用模板，再按真实土壤分类单元、指标、评价模块</text>
+      <text x="28" y="99" font-size="15" fill="#5C7066">和建议主题折算。</text>
+    </g>
+    <g transform="translate(608 276)">
+      <rect width="568" height="110" rx="14" fill="#FFFFFF" stroke="#D2DFD9"/><rect width="7" height="110" rx="4" fill="#2E6B4E"/>
+      <circle cx="44" cy="39" r="20" fill="#E2F1E9"/><text x="44" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#2E6B4E">06</text>
+      <text x="78" y="44" font-size="21" font-weight="700" fill="#263A31">验收导引排版</text>
+      <text x="28" y="78" font-size="15" fill="#5C7066">严格映射“第一章—一、—（一）—1.—（1）”层级，并分别检查</text>
+      <text x="28" y="99" font-size="15" fill="#5C7066">DOCX 结构和逐页视觉结果。</text>
+    </g>
+  </g>
+</svg>

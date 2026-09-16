@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="382" viewBox="0 0 1200 382" role="img" aria-labelledby="title desc">
+  <title id="title">平台兼容</title>
+  <desc id="desc">OpenAI Codex、Claude Code、WorkBuddy及其他Agent Skills平台的安装位置和支持方式</desc>
+  <rect x="1" y="1" width="1198" height="380" rx="18" fill="#FFFFFF" stroke="#C9DCD2"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif">
+    <path d="M18 18h1164v56H18z" fill="#2E6B4E"/>
+    <path d="M18 74h1164v72H18zM18 218h1164v72H18z" fill="#F7FAF8"/>
+    <path d="M18 146h1164v72H18zM18 290h1164v72H18z" fill="#FFFFFF"/>
+    <g stroke="#C9DCD2"><path d="M228 18v344M648 18v344"/><path d="M18 74h1164M18 146h1164M18 218h1164M18 290h1164M18 362h1164"/></g>
+    <g fill="#FFFFFF" font-size="19" font-weight="700" text-anchor="middle"><text x="123" y="53">平台</text><text x="438" y="53">安装位置</text><text x="915" y="53">支持方式</text></g>
+    <g fill="#263A31" font-size="17">
+      <g font-weight="700"><text x="42" y="118">OpenAI Codex</text><text x="42" y="190">Claude Code</text><text x="42" y="262">WorkBuddy</text><text x="42" y="334">其他 Agent Skills 平台</text></g>
+      <g font-family="Consolas, SFMono-Regular, monospace" font-size="14" fill="#355E4A">
+        <text x="250" y="118">~/.codex/skills/soil-city-county-chronicle</text>
+        <text x="250" y="190">~/.claude/skills/soil-city-county-chronicle</text>
+        <text x="250" y="255">platforms/workbuddy/</text><text x="250" y="276">soil-city-county-chronicle</text>
+      </g>
+      <text x="250" y="334" fill="#52645C">平台规定的 Skills 目录</text>
+      <g fill="#52645C"><text x="674" y="118">仓库根目录原生 Skill</text><text x="674" y="190">仓库根目录兼容 Agent Skills 开放格式</text><text x="674" y="262">官方字段与 references/scripts/templates 专用适配</text><text x="674" y="334">使用仓库根目录，并先确认脚本执行权限</text></g>
+    </g>
+  </g>
+</svg>

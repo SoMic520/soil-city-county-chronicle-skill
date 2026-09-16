@@ -28,20 +28,9 @@
 
 ## 核心能力
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top"><strong>📚 资料先行</strong><br><sub>盘点总体、工作、类型、属性、数据、退化、耕地质量和适宜性等已有成果；文件名不等于内容已核验。</sub></td>
-    <td width="50%" valign="top"><strong>🏛️ 自动识别市县级</strong><br><sub>综合任务文件、适用导引、模板标识和下级汇总特征判定层级；“名称带市”不作为单独判据。</sub></td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top"><strong>🔗 证据可追溯</strong><br><sub>建立“章节—主张—来源—指标—表图”追溯链；证据不足时只阻断受影响表述，不虚构事实。</sub></td>
-    <td width="50%" valign="top"><strong>🧱 分层级章节契约</strong><br><sub>市级强调县级成果核验、接边、制图综合和土类—亚类—土属；县级深入亚类—土属—土种与典型剖面。</sub></td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top"><strong>📏 模板驱动篇幅</strong><br><sub>先实测同层级适用模板，再按真实土壤分类单元、指标、评价模块和建议主题折算。</sub></td>
-    <td width="50%" valign="top"><strong>📝 验收导引排版</strong><br><sub>严格映射“第一章—一、—（一）—1.—（1）”层级，并分别检查 DOCX 结构和逐页视觉结果。</sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="docs/core-capabilities.svg" alt="六项核心能力：资料、层级、证据、章节、篇幅与排版" width="100%">
+</p>
 
 ## 完整工作流
 
@@ -53,13 +42,9 @@
 
 ### 安装前检查
 
-<table width="100%">
-  <tr>
-    <td width="33%" align="center"><strong>Git</strong><br><sub>用于克隆和更新仓库</sub></td>
-    <td width="33%" align="center"><strong>Python 3.9+</strong><br><sub>仅使用标准库，无需 pip 安装依赖</sub></td>
-    <td width="34%" align="center"><strong>目标平台</strong><br><sub>Codex、Claude Code 或 WorkBuddy</sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="docs/installation-check.svg" alt="安装前检查：Git、Python 3.9+和目标平台" width="100%">
+</p>
 
 ```powershell
 git --version
@@ -144,30 +129,17 @@ python scripts/level_profile.py detect "任务书.docx" "土壤志模板.docx" -
 
 识别器按证据强度判断 `municipal`（市级）、`county`（县级）或 `unknown`（待确认）。地名以“市”结尾可能是地级市，也可能是县级市，因此不会只凭标题后缀判断。冲突或弱证据返回 `unknown`，共享的资料整理可继续，但不会提前锁定层级专属章节、篇幅和排版规则。
 
-<table width="100%">
-  <thead><tr><th width="22%">比较项</th><th width="39%">市级土壤志</th><th width="39%">县级土壤志</th></tr></thead>
-  <tbody>
-    <tr><td><strong>成果来源</strong></td><td>核验并汇总所辖县级成果，处理跨界一致性</td><td>以本级调查、检测、制图、评价和历史资料为主</td></tr>
-    <tr><td><strong>空间重点</strong></td><td>县际差异、接边、制图综合、市域分区</td><td>县域内部土壤分布、利用与剖面证据</td></tr>
-    <tr><td><strong>第三章主线</strong></td><td>土类 → 亚类 → 土属，土属层面综合记述</td><td>亚类 → 土属 → 土种，土种含典型剖面详述</td></tr>
-    <tr><td><strong>配套成果</strong></td><td>市级土种志通常独立成册，避免在土壤志重复展开</td><td>土壤志内按导引逐土种覆盖并给出剖面依据</td></tr>
-    <tr><td><strong>建议尺度</strong></td><td>跨县布局、区域协同、全市农业发展与分区治理</td><td>县域耕地保护、具体障碍改良与落地措施</td></tr>
-  </tbody>
-</table>
+<p align="center">
+  <img src="docs/level-comparison.svg" alt="市级与县级土壤志在成果来源、空间重点、章节主线、配套成果和建议尺度方面的差异" width="100%">
+</p>
 
 完整差异、证据优先级和章节映射见[市县级识别与模板差异](references/levels.md)。
 
 ## 平台兼容
 
-<table width="100%">
-  <thead><tr><th width="20%">平台</th><th width="36%">安装位置</th><th width="44%">支持方式</th></tr></thead>
-  <tbody>
-    <tr><td><strong>OpenAI Codex</strong></td><td><code>~/.codex/skills/soil-city-county-chronicle</code></td><td>仓库根目录原生 Skill</td></tr>
-    <tr><td><strong>Claude Code</strong></td><td><code>~/.claude/skills/soil-city-county-chronicle</code></td><td>仓库根目录兼容 Agent Skills 开放格式</td></tr>
-    <tr><td><strong>WorkBuddy</strong></td><td><code>platforms/workbuddy/soil-city-county-chronicle</code></td><td>官方字段与 <code>references/scripts/templates</code> 专用适配</td></tr>
-    <tr><td><strong>其他 Agent Skills 平台</strong></td><td>平台规定的 Skills 目录</td><td>使用仓库根目录，并先确认脚本执行权限</td></tr>
-  </tbody>
-</table>
+<p align="center">
+  <img src="docs/platform-compatibility.svg" alt="Codex、Claude Code、WorkBuddy及其他Agent Skills平台兼容方式" width="100%">
+</p>
 
 完整说明见[平台兼容矩阵](platforms/README.md)。
 
@@ -175,16 +147,9 @@ python scripts/level_profile.py detect "任务书.docx" "土壤志模板.docx" -
 
 市县级导引均不以一个全国统一总字数代替内容质量。本 Skill 采用“同层级模板实测＋结构折算＋偏差上限”，默认统计接受修订后的章内叙述正文有效字符数。
 
-<table width="100%">
-  <thead><tr><th width="25%">控制对象</th><th width="30%">普通项目门槛</th><th width="45%">控制意图</th></tr></thead>
-  <tbody>
-    <tr><td><strong>第一、二章目标</strong></td><td align="center"><code>同层级模板对应章 ±15%</code></td><td>保持基础章节与适用模板相近</td></tr>
-    <tr><td><strong>第三至六章目标</strong></td><td align="center"><code>结构折算；模板对应章 ±30%</code></td><td>按分类单元、指标和评价模块自适应</td></tr>
-    <tr><td><strong>全志目标合计</strong></td><td align="center"><code>模板对应章节合计 ±20%</code></td><td>防止总体篇幅偏离模板过大</td></tr>
-    <tr><td><strong>各章终稿实际值</strong></td><td align="center"><code>已锁定章目标 ±15%</code></td><td>约束编纂过程中的章节膨胀或缩水</td></tr>
-    <tr><td><strong>终稿实际合计</strong></td><td align="center"><code>总目标 ±10%；模板合计 ±25%</code></td><td>同时校验项目目标与模板参照</td></tr>
-  </tbody>
-</table>
+<p align="center">
+  <img src="docs/length-contract.svg" alt="篇幅契约：控制对象、普通项目门槛和控制意图" width="100%">
+</p>
 
 标题、表格、题注、页眉页脚、附件及删除的修订文字不计入默认篇幅。市级第三章以土属等市级叙述单元折算，县级第三章以土种等县级叙述单元折算；不能混用两个层级的模板基线。详细规则见[篇幅契约](references/length.md)。
 
@@ -199,15 +164,9 @@ python scripts/length_profile.py check-plan "length-plan.json" --final
 
 ## 质量门槛
 
-<table width="100%">
-  <tr>
-    <td width="20%" align="center"><strong>① 层级门槛</strong><br><sub>市县级与导引匹配</sub></td>
-    <td width="20%" align="center"><strong>② 资料门槛</strong><br><sub>来源、版本、缺口可查</sub></td>
-    <td width="20%" align="center"><strong>③ 内容门槛</strong><br><sub>章节、分类单元、专题可核</sub></td>
-    <td width="20%" align="center"><strong>④ 数值门槛</strong><br><sub>单位、分母、时期一致</sub></td>
-    <td width="20%" align="center"><strong>⑤ 版面门槛</strong><br><sub>结构检查＋全页渲染</sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="docs/quality-gates.svg" alt="五项质量门槛：层级、资料、内容、数值与版面" width="100%">
+</p>
 
 ```powershell
 python scripts/chronicle.py check "D:\项目\市县级土壤志工作台"

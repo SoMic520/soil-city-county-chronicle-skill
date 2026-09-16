@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="408" viewBox="0 0 1200 408" role="img" aria-labelledby="title desc">
+  <title id="title">篇幅契约</title>
+  <desc id="desc">第一二章、第三至六章、全志目标和终稿实际值的篇幅控制门槛</desc>
+  <rect x="1" y="1" width="1198" height="406" rx="18" fill="#FFFFFF" stroke="#C9DCD2"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, sans-serif">
+    <path d="M18 18h1164v55H18z" fill="#2E6B4E"/>
+    <path d="M18 73h1164v63H18zM18 199h1164v63H18zM18 325h1164v63H18z" fill="#F7FAF8"/>
+    <path d="M18 136h1164v63H18zM18 262h1164v63H18z" fill="#FFFFFF"/>
+    <g stroke="#C9DCD2">
+      <path d="M238 18v370M552 18v370"/>
+      <path d="M18 73h1164M18 136h1164M18 199h1164M18 262h1164M18 325h1164M18 388h1164"/>
+    </g>
+    <g fill="#FFFFFF" font-size="19" font-weight="700" text-anchor="middle">
+      <text x="128" y="52">控制对象</text>
+      <text x="395" y="52">普通项目门槛</text>
+      <text x="867" y="52">控制意图</text>
+    </g>
+    <g fill="#263A31" font-size="18">
+      <g font-weight="700">
+        <text x="42" y="112">第一、二章目标</text>
+        <text x="42" y="175">第三至六章目标</text>
+        <text x="42" y="238">全志目标合计</text>
+        <text x="42" y="301">各章终稿实际值</text>
+        <text x="42" y="364">终稿实际合计</text>
+      </g>
+      <g text-anchor="middle" font-size="17" fill="#244C3B">
+        <g><rect x="268" y="90" width="254" height="30" rx="8" fill="#E7F1EC"/><text x="395" y="111">同层级模板对应章 ±15%</text></g>
+        <g><rect x="259" y="153" width="272" height="30" rx="8" fill="#E7F1EC"/><text x="395" y="174">结构折算；模板对应章 ±30%</text></g>
+        <g><rect x="273" y="216" width="244" height="30" rx="8" fill="#E7F1EC"/><text x="395" y="237">模板对应章节合计 ±20%</text></g>
+        <g><rect x="284" y="279" width="222" height="30" rx="8" fill="#E7F1EC"/><text x="395" y="300">已锁定章目标 ±15%</text></g>
+        <g><rect x="258" y="342" width="274" height="30" rx="8" fill="#FFF0D8"/><text x="395" y="363" fill="#7A4A14">总目标 ±10%；模板合计 ±25%</text></g>
+      </g>
+      <g fill="#52645C">
+        <text x="578" y="112">保持基础章节与适用模板相近</text>
+        <text x="578" y="175">按分类单元、指标和评价模块自适应</text>
+        <text x="578" y="238">防止总体篇幅偏离模板过大</text>
+        <text x="578" y="301">约束编纂过程中的章节膨胀或缩水</text>
+        <text x="578" y="364">同时校验项目目标与模板参照</text>
+      </g>
+    </g>
+  </g>
+</svg>
