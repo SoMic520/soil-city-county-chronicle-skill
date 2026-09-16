@@ -28,7 +28,7 @@
     <path d="M0 74c71 6 108 28 126 65 18 38 55 60 116 69"/>
   </g>
 
-  <g transform="translate(36 54)" filter="url(#shadow)">
+  <g transform="translate(36 70)" filter="url(#shadow)">
     <circle cx="90" cy="90" r="94" fill="#FFFDF7" stroke="#F5C56B" stroke-opacity="0.58" stroke-width="3"/>
     <image href="official-third-soil-survey-mark.png" x="0" y="0" width="180" height="180"
       preserveAspectRatio="xMidYMid meet" clip-path="url(#officialMarkClip)"/>
