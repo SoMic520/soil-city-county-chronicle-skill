@@ -76,11 +76,12 @@ def draw_pill(
     fill: str,
     label: str,
     label_color: str = "#FFFFFF",
+    label_size: int = 16,
 ) -> None:
     draw.rounded_rectangle(box(coords), radius=sc(21), fill=fill)
     cx = (coords[0] + coords[2]) / 2
     cy = (coords[1] + coords[3]) / 2 - 1
-    draw.text((sc(cx), sc(cy)), label, font=font(16, bold=True), fill=label_color, anchor="mm")
+    draw.text((sc(cx), sc(cy)), label, font=font(label_size, bold=True), fill=label_color, anchor="mm")
 
 
 def platform_header(
@@ -96,23 +97,23 @@ def platform_header(
     tag: str,
     icon_name: str,
 ) -> None:
-    canvas = Image.new("RGBA", (sc(900), sc(104)), "white")
+    canvas = Image.new("RGBA", (sc(900), sc(76)), "white")
     draw = ImageDraw.Draw(canvas)
-    draw.rounded_rectangle(box((2, 2, 898, 102)), radius=sc(18), fill=background, outline=border, width=sc(2))
-    draw.rounded_rectangle(box((2, 2, 16, 102)), radius=sc(7), fill=accent)
+    draw.rounded_rectangle(box((2, 2, 898, 74)), radius=sc(14), fill=background, outline=border, width=sc(2))
+    draw.rounded_rectangle(box((2, 2, 13, 74)), radius=sc(5), fill=accent)
 
     if icon_name == "claude":
-        draw.ellipse(box((42, 24, 98, 80)), fill="#FFF8F3", outline="#E7C1A8", width=sc(1))
-        icon = rounded_icon(ICONS / "claude.png", 38)
+        draw.ellipse(box((31, 17, 73, 59)), fill="#FFF8F3", outline="#E7C1A8", width=sc(1))
+        icon = rounded_icon(ICONS / "claude.png", 29)
     elif icon_name == "codex":
-        icon = rounded_icon(ICONS / "codex.png", 58)
+        icon = rounded_icon(ICONS / "codex.png", 42)
     else:
-        icon = rounded_icon(ICONS / "workbuddy.png", 56, radius=14)
-    paste_center(canvas, icon, (70, 52))
+        icon = rounded_icon(ICONS / "workbuddy.png", 42, radius=11)
+    paste_center(canvas, icon, (52, 38))
 
-    draw.text((sc(118), sc(21)), title, font=font(27, bold=True), fill=title_color)
-    draw.text((sc(118), sc(59)), subtitle, font=font(17), fill=subtitle_color)
-    draw_pill(draw, (680, 31, 870, 73), accent, tag)
+    draw.text((sc(88), sc(11)), title, font=font(22, bold=True), fill=title_color)
+    draw.text((sc(88), sc(43)), subtitle, font=font(14), fill=subtitle_color)
+    draw_pill(draw, (698, 20, 870, 56), accent, tag, label_size=14)
     canvas.convert("RGB").save(output, optimize=True)
 
 
@@ -129,46 +130,46 @@ def horizontal_gradient(size: tuple[int, int], left: str, right: str) -> Image.I
 
 
 def primary_download(output: Path) -> None:
-    canvas = Image.new("RGBA", (sc(900), sc(112)), "white")
+    canvas = Image.new("RGBA", (sc(900), sc(80)), "white")
     shadow = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
-    ImageDraw.Draw(shadow).rounded_rectangle(box((8, 14, 892, 106)), radius=sc(22), fill=(108, 67, 31, 48))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(sc(7)))
+    ImageDraw.Draw(shadow).rounded_rectangle(box((8, 10, 892, 76)), radius=sc(16), fill=(108, 67, 31, 42))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(sc(5)))
     canvas.alpha_composite(shadow)
 
-    gradient = horizontal_gradient((sc(884), sc(92)), "#E3943D", "#F5C56B")
+    gradient = horizontal_gradient((sc(884), sc(66)), "#E3943D", "#F5C56B")
     mask = Image.new("L", gradient.size, 0)
-    ImageDraw.Draw(mask).rounded_rectangle((0, 0, gradient.width - 1, gradient.height - 1), radius=sc(22), fill=255)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, gradient.width - 1, gradient.height - 1), radius=sc(16), fill=255)
     gradient.putalpha(mask)
-    canvas.alpha_composite(gradient, (sc(8), sc(8)))
+    canvas.alpha_composite(gradient, (sc(8), sc(6)))
     draw = ImageDraw.Draw(canvas)
-    draw.ellipse(box((35, 27, 89, 81)), fill="#FFFFFF")
+    draw.ellipse(box((30, 15, 78, 63)), fill="#FFFFFF")
 
-    codex = rounded_icon(ICONS / "codex.png", 36)
-    paste_center(canvas, codex, (56, 50))
-    draw.ellipse(box((58, 50, 86, 78)), fill="#FFF8F3", outline="#FFFFFF", width=sc(2))
-    claude = rounded_icon(ICONS / "claude.png", 20)
-    paste_center(canvas, claude, (72, 64))
+    codex = rounded_icon(ICONS / "codex.png", 30)
+    paste_center(canvas, codex, (48, 34))
+    draw.ellipse(box((51, 37, 75, 61)), fill="#FFF8F3", outline="#FFFFFF", width=sc(2))
+    claude = rounded_icon(ICONS / "claude.png", 16)
+    paste_center(canvas, claude, (63, 49))
 
-    draw.text((sc(108), sc(22)), "下载通用 Skill ZIP", font=font(25, bold=True), fill="#173E31")
-    draw.text((sc(108), sc(59)), "OpenAI Codex · Claude Code 适用　最新 Release · 解压即用", font=font(16), fill="#5E442D")
-    draw_pill(draw, (712, 31, 862, 77), "#173E31", "立即下载")
-    draw.line(box((831, 47, 839, 55)), fill="#F5C56B", width=sc(3))
-    draw.line(box((831, 63, 839, 55)), fill="#F5C56B", width=sc(3))
+    draw.text((sc(94), sc(11)), "下载通用 Skill ZIP", font=font(21, bold=True), fill="#173E31")
+    draw.text((sc(94), sc(41)), "OpenAI Codex · Claude Code 适用　最新 Release · 解压即用", font=font(14), fill="#5E442D")
+    draw_pill(draw, (720, 20, 864, 58), "#173E31", "立即下载", label_size=15)
+    draw.line(box((835, 32, 842, 39)), fill="#F5C56B", width=sc(3))
+    draw.line(box((835, 46, 842, 39)), fill="#F5C56B", width=sc(3))
     canvas.convert("RGB").save(output, optimize=True)
 
 
 def workbuddy_download(output: Path) -> None:
-    canvas = Image.new("RGBA", (sc(900), sc(96)), "white")
+    canvas = Image.new("RGBA", (sc(900), sc(68)), "white")
     draw = ImageDraw.Draw(canvas)
-    draw.rounded_rectangle(box((8, 6, 892, 86)), radius=sc(20), fill="#F1F7F4", outline="#2E6B4E", width=sc(2))
-    draw.rounded_rectangle(box((8, 6, 20, 86)), radius=sc(6), fill="#2E6B4E")
-    icon = rounded_icon(ICONS / "workbuddy.png", 50, radius=13)
-    paste_center(canvas, icon, (62, 46))
-    draw.text((sc(104), sc(17)), "下载 WorkBuddy ZIP", font=font(23, bold=True), fill="#173E31")
-    draw.text((sc(104), sc(53)), "WorkBuddy Open Platform 专用导入包", font=font(15), fill="#5B7067")
-    draw_pill(draw, (712, 23, 862, 69), "#2E6B4E", "立即下载")
-    draw.line(box((831, 39, 839, 47)), fill="#F5C56B", width=sc(3))
-    draw.line(box((831, 55, 839, 47)), fill="#F5C56B", width=sc(3))
+    draw.rounded_rectangle(box((8, 4, 892, 64)), radius=sc(15), fill="#F1F7F4", outline="#2E6B4E", width=sc(2))
+    draw.rounded_rectangle(box((8, 4, 18, 64)), radius=sc(5), fill="#2E6B4E")
+    icon = rounded_icon(ICONS / "workbuddy.png", 40, radius=10)
+    paste_center(canvas, icon, (49, 34))
+    draw.text((sc(84), sc(8)), "下载 WorkBuddy ZIP", font=font(20, bold=True), fill="#173E31")
+    draw.text((sc(84), sc(37)), "WorkBuddy Open Platform 专用导入包", font=font(13), fill="#5B7067")
+    draw_pill(draw, (720, 15, 864, 53), "#2E6B4E", "立即下载", label_size=15)
+    draw.line(box((835, 27, 842, 34)), fill="#F5C56B", width=sc(3))
+    draw.line(box((835, 41, 842, 34)), fill="#F5C56B", width=sc(3))
     canvas.convert("RGB").save(output, optimize=True)
 
 
