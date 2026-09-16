@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing or new v* release tag"
+        required: true
+        default: "v2026.09.16-r5"
 
 permissions:
   contents: write
@@ -11,6 +17,8 @@ permissions:
 jobs:
   package:
     runs-on: ubuntu-latest
+    env:
+      RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,12 +33,20 @@ jobs:
         run: |
           python tools/build_release_archive.py canonical --output dist/soil-city-county-chronicle-skill.zip
           python tools/build_release_archive.py workbuddy --output dist/soil-city-county-chronicle-workbuddy.zip
-      - name: Publish GitHub Release
+      - name: Publish or update GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
-            dist/soil-city-county-chronicle-skill.zip \
-            dist/soil-city-county-chronicle-workbuddy.zip \
-            --title "$GITHUB_REF_NAME" \
-            --generate-notes
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" \
+              dist/soil-city-county-chronicle-skill.zip \
+              dist/soil-city-county-chronicle-workbuddy.zip \
+              --clobber
+          else
+            gh release create "$RELEASE_TAG" \
+              dist/soil-city-county-chronicle-skill.zip \
+              dist/soil-city-county-chronicle-workbuddy.zip \
+              --target "$GITHUB_SHA" \
+              --title "$RELEASE_TAG" \
+              --generate-notes
+          fi
