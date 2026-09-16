@@ -9,6 +9,7 @@
 - 重做GitHub首页横幅、静态工作流、全宽信息表和Codex/Claude Code/WorkBuddy安装验证说明。
 - WorkBuddy适配升级为5.0.0并改用`soil-city-county-chronicle`名称。
 - 新增确定性通用Skill/WorkBuddy ZIP构建器、Release自动发布流程和首页下载按钮。
+- 发布包统一将文本换行归一为LF，确保Windows与Linux构建得到相同ZIP和SHA-256摘要。
 - 首页横幅改用第三次全国土壤普查官方指定标识，并补充权利归属、非官方项目声明及来源链接。
 
 ## 2026-09-07-r4

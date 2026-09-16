@@ -9,6 +9,7 @@ VERSION = '2026-09-16-r5'
 ARCHIVE_ROOT = 'soil-city-county-chronicle'
 FORBIDDEN_SUFFIXES = {'.doc', '.docx', '.pdf', '.xls', '.xlsx', '.ppt', '.pptx', '.zip', '.7z', '.rar',
                       '.gdb', '.gpkg', '.shp', '.dbf', '.shx', '.tif', '.tiff'}
+TEXT_SUFFIXES = {'.csv', '.json', '.md', '.py', '.txt', '.yaml', '.yml'}
 
 
 def source_root(target):
@@ -56,6 +57,14 @@ def zip_info(name):
     return info
 
 
+def package_bytes(path):
+    data = path.read_bytes()
+    if path.suffix.lower() not in TEXT_SUFFIXES:
+        return data
+    text = data.decode('utf-8')
+    return text.replace('\r\n', '\n').replace('\r', '\n').encode('utf-8')
+
+
 def build(target, output):
     output = Path(output)
     if output.exists():
@@ -73,7 +82,7 @@ def build(target, output):
     with ZipFile(output, 'w', compression=ZIP_DEFLATED, compresslevel=9) as archive:
         for path, relative in files:
             member = PurePosixPath(ARCHIVE_ROOT, *relative.parts).as_posix()
-            archive.writestr(zip_info(member), path.read_bytes())
+            archive.writestr(zip_info(member), package_bytes(path))
         archive.writestr(zip_info(f'{ARCHIVE_ROOT}/PACKAGE-METADATA.json'), metadata)
     verify(output, target)
     return {'output': str(output.resolve()), 'target': target, 'files': len(files) + 1, 'bytes': output.stat().st_size}
