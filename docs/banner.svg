@@ -28,9 +28,6 @@
     <path d="M0 74c71 6 108 28 126 65 18 38 55 60 116 69"/>
   </g>
 
-  <rect x="28" y="28" width="224" height="224" rx="24" fill="#0A4937" fill-opacity="0.72"
-    stroke="#79B59D" stroke-opacity="0.28" stroke-width="2"/>
-
   <g transform="translate(50 50)" filter="url(#shadow)">
     <circle cx="90" cy="90" r="88" fill="#FFFDF7" stroke="#F5C56B" stroke-opacity="0.64" stroke-width="3"/>
     <image href="official-third-soil-survey-mark.png" x="10" y="6" width="164" height="164"
